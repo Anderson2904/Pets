@@ -1,2 +1,0 @@
-# Pets
-My Pets´Store
