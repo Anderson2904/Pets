@@ -18,7 +18,7 @@ include('../../config/database.php');
 
     $ans = pg_query($conn,$sql);
     if ($ans){
-        echo "User has been created succesfully";
+        header("refresh:0;url=../signin.html");
     }else{
         echo "Error". pg_last_error();
     }
