@@ -1,9 +1,9 @@
 <?php
     session_start();
-    if(isset($_SESSION["id_users"])){
-        //header("location:home.php");
-    }else{
-        header("location:signin.php");
+    if(!isset($_SESSION["id_user"])){
+        //header("Location:home.php");
+        header("refresh:0;url=signin.php");
+        exit;
     }
 ?>
 
