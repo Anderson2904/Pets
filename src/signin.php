@@ -1,10 +1,19 @@
+<?php
+    session_start();
+    if(isset($_SESSION["id_users"])){
+        //header("location:home.php");
+    }else{
+        header("location:signin.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets | New user</title>
-    <link rel="icon" type="imagenes/png" href="../src/iconos/logo22.jpg"
+    <link rel="icon" type="imagenes/png" href="../src/iconos/logo22.jpg">
 </head>
 <body>
     <center>

@@ -27,7 +27,7 @@ include('../../config/database.php');
     $ans = pg_query($conn,$sql);
     if ($ans){
         echo "<script>alert('users has been registers')</script>";
-        header("refresh:0;url=../signin.html");
+        header("refresh:0;url=../signin.php");
     }else{
         echo "Error". pg_last_error();
     }
